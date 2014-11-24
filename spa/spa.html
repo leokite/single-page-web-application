@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>SPA Starter</title>
+
+  <link rel="stylesheet" href="css/spa.css" type="text/css" />
+  <link rel="stylesheet" href="css/spa.shell.css" type="text/css" />
+
+  <script src="js/jq/jquery-1.9.1.js"></script>
+  <script src="js/jq/jquery.uriAnchor-1.1.3.js"></script>
+
+  <script src="js/spa.js"></script>
+  <script src="js/spa.shell.js"></script>
+  <script>
+    // DOMの準備ができたらアプリケーションを初期化する
+    $(function() {spa.initModule($('#spa'));});
+    // 上記は、以下の短縮表現
+    //$(document).ready(function() {spa.initModule($('#spa'));});
+  </script>
+</head>
+<body>
+<div id="spa"></div>
+</body>
+</html>
